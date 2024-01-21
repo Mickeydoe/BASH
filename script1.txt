@@ -1,1 +1,6 @@
 echo "How are you"
+
+echo "I am fine"
+
+echo "I wrote this text in a new branch"
+
