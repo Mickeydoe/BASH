@@ -18,7 +18,7 @@ echo "Indicate what you want to do"
 read choice
 
 if [ $choice = 1 ]; then
-    read dirname
+    read -p "Enter the name of the directory: " dirname
     mkdir $dirname
 elif [ $choice = 2 ]; then
     read -p "Enter the directory to delete: " dirname
