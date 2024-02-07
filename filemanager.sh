@@ -17,6 +17,13 @@ echo "9. Exit"
 echo "Indicate what you want to do"
 read choice
 
-if [ $choice eq 1 ] then
+if [ $choice = 1 ]; then
     read dirname
     mkdir $dirname
+else
+    if [ $choice = 2 ]; then
+    read -p "Enter the directory to delete: " dirname
+    rm -rf $dirname
+else   
+    if []
+fi
