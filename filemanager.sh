@@ -25,5 +25,11 @@ else
     read -p "Enter the directory to delete: " dirname
     rm -rf $dirname
 else   
-    if []
+    if [ $choice = 3 ]; then 
+    read -p "Enter the directory content you want to list: " dirname
+    ls $dirname
+else
+    if [ $choice = 4 ]; then
+    read -p "Enter the directory you want to change into: " dirname
+    cd $dirname
 fi
