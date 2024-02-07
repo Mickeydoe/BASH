@@ -32,4 +32,25 @@ else
     if [ $choice = 4 ]; then
     read -p "Enter the directory you want to change into: " dirname
     cd $dirname
+else
+    if [ $choice = 5]; then
+    read -p "Enter name you want to give to file: " filename
+    touch $filename
+else 
+    if [ $choice = 6]; then
+    read -p "Enter  file you want to write to: " filename
+    nano $filename
+else 
+    if [ $choice = 7 ]; then
+    read -p "Enter file to read from: " filename
+    cat $filename
+else 
+    if [ $choice = 8 ]; then 
+    read -p "Enter the file to delete: " filename
+    rm $filename
+else
+    if [ $choice = 9 ]; then
+    echo "Exiting"
+
+
 fi
