@@ -17,3 +17,6 @@ echo "9. Exit"
 echo "Indicate what you want to do"
 read choice
 
+if [ $choice eq 1 ] then
+    read dirname
+    mkdir $dirname
